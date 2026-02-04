@@ -2290,4 +2290,50 @@ html, body { overflow-x: hidden; }
     font-size: 20px;
   }
 }
+/* =========================================
+   Floating pill improvements (mobile)
+   - arrow inline
+   - smaller size
+   - cleaner proportions
+========================================= */
+
+@media (max-width: 900px){
+
+  .floating-actions{
+    height: 52px;                /* smaller overall */
+    width: min(320px, 92%);
+    border-radius: 999px;
+  }
+
+  .floating-actions .action-btn{
+    display: flex;               /* KEY FIX */
+    align-items: center;         /* vertical center */
+    justify-content: center;
+    gap: 6px;                    /* space between text + arrow */
+    padding: 0 16px;
+    font-size: 15px;
+    white-space: nowrap;         /* prevent wrapping */
+  }
+
+  /* arrow next to text */
+  .floating-actions .action-btn span,
+  .floating-actions .action-btn .arrow{
+    display: inline-block;
+    line-height: 1;
+  }
+}
+
+
+@media (max-width: 520px){
+
+  .floating-actions{
+    height: 48px;                /* even smaller on tiny phones */
+    width: 95%;
+  }
+
+  .floating-actions .action-btn{
+    font-size: 14px;
+    padding: 0 12px;
+  }
+}
 
