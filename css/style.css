@@ -2245,24 +2245,6 @@ html, body { overflow-x: hidden; }
 
 @media (max-width: 900px){
 
-  /* 1) Give space so the fixed pill doesn't cover content */
-  body{
-    padding-bottom: 120px;
-  }
-
-  /* Make the fixed pill smaller + centered */
-  .floating-actions{
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(360px, calc(100% - 28px));
-    border-radius: 999px;
-    overflow: hidden;
-  }
-
-  .floating-actions .action-btn{
-    padding: 14px 18px;
-    font-size: 16px;
-  }
 
   /* 2) Stack the "Why ____?" content */
   .why-split,
