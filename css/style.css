@@ -2284,20 +2284,3 @@ html, body { overflow-x: hidden; }
     justify-content: center;
   }
 }
-
-@media (max-width: 520px){
-
-  /* Even more compact pill on very small screens */
-  body{
-    padding-bottom: 130px;
-  }
-
-  .floating-actions{
-    width: calc(100% - 22px);
-  }
-
-  .floating-actions .action-btn{
-    padding: 12px 14px;
-    font-size: 15px;
-  }
-}
