@@ -2336,5 +2336,41 @@ html, body { overflow-x: hidden; }
     padding: 0 12px;
   }
 }
+  /* ===== Styles page: Wildlife itinerary cards padding on mobile ===== */
+@media (max-width: 900px){
+  .hcard-body{
+    padding: 16px !important;
+  }
+}
+
+/* ===== Styles page reviews: responsive grid ===== */
+@media (max-width: 900px){
+  .styles-review-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px){
+  .styles-review-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Styles page beach grid: responsive ===== */
+@media (max-width: 900px){
+  .beach-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px){
+  .beach-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .beach-card img{
+    height: 190px; /* looks nicer when cards are full width */
+  }
+}
 }
 
