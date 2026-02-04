@@ -2238,3 +2238,84 @@ html, body { overflow-x: hidden; }
     grid-auto-rows: 120px;
   }
 }
+/* =========================================================
+   DESTINATIONS PAGE MOBILE FIXES
+   (Fixes all destinations sections)
+========================================================= */
+
+@media (max-width: 900px){
+
+  /* 1) Give space so the fixed pill doesn't cover content */
+  body{
+    padding-bottom: 120px;
+  }
+
+  /* Make the fixed pill smaller + centered */
+  .floating-actions{
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(360px, calc(100% - 28px));
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .floating-actions .action-btn{
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+
+  /* 2) Stack the "Why ____?" content */
+  .why-split,
+  .why-grid,
+  .dest-why,
+  .dest-why-grid,
+  .dest-why-content{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* If the map/image sits in a right column, force it full width */
+  .why-map,
+  .dest-map,
+  .map-wrap,
+  .why-split img,
+  .why-grid img{
+    width: 100%;
+    max-width: 520px;
+    margin: 18px auto 0;
+    display: block;
+  }
+
+  /* 3) Reviews/cards: 1 per row on phone */
+  .review-grid,
+  .reviews-grid,
+  .review-cards,
+  .travellers-grid{
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  /* If your review cards are flex instead of grid */
+  .review-grid,
+  .reviews-grid,
+  .review-cards,
+  .travellers-grid{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px){
+
+  /* Even more compact pill on very small screens */
+  body{
+    padding-bottom: 130px;
+  }
+
+  .floating-actions{
+    width: calc(100% - 22px);
+  }
+
+  .floating-actions .action-btn{
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+}
