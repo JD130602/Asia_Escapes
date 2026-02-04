@@ -2238,14 +2238,3 @@ html, body { overflow-x: hidden; }
     grid-auto-rows: 120px;
   }
 }
-/* ===== Mobile menu: fix "Home" being too faint ===== */
-@media (max-width: 900px){
-  .mobile-nav a{
-    opacity: 1 !important;
-  }
-
-  /* also make sure the summary titles are strong */
-  .mobile-dd summary{
-    opacity: 1 !important;
-  }
-}
