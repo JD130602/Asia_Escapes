@@ -2267,20 +2267,27 @@ html, body { overflow-x: hidden; }
     display: block;
   }
 
-  /* 3) Reviews/cards: 1 per row on phone */
-  .review-grid,
-  .reviews-grid,
-  .review-cards,
-  .travellers-grid{
-    grid-template-columns: 1fr !important;
-    gap: 18px;
-  }
+ /* ===== Destinations reviews: make cards mobile-friendly ===== */
 
-  /* If your review cards are flex instead of grid */
-  .review-grid,
-  .reviews-grid,
-  .review-cards,
-  .travellers-grid{
-    justify-content: center;
+@media (max-width: 900px){
+  /* tablet/phone: 2 per row */
+  .test-grid{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 520px){
+  /* small phones: 1 per row */
+  .test-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .test-card{
+    padding: 18px;
+  }
+
+  .test-card h3{
+    font-size: 20px;
+  }
+}
+
