@@ -2370,6 +2370,62 @@ html, body { overflow-x: hidden; }
   .beach-card img{
     height: 190px; /* looks nicer when cards are full width */
   }
+/* =========================================
+   ABOUT PAGE mobile fixes (exact selectors)
+   - ASIA Escapes section (.about-split)
+   - Our Process section (.process-grid)
+========================================= */
+
+@media (max-width: 900px){
+
+  /* ASIA Escapes: stack text above image */
+  .about-section .about-split{
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    align-items: start !important;
+  }
+
+  /* Make the image behave nicely on small screens */
+  .about-section .about-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-section .about-media .img-slot{
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 26px;
+    display: block;
+  }
+
+  /* Badges: keep them centered and wrap */
+  .about-badges{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Our Process: 2 columns on tablet/phone */
+  .process-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 520px){
+
+  /* Our Process: 1 column on small phones */
+  .process-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .process-card{
+    padding: 18px !important;
+  }
 }
 }
 
