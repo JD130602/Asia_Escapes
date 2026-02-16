@@ -2275,6 +2275,7 @@ html, body { overflow-x: hidden; }
     grid-template-columns: repeat(2, 1fr);
   }
 }
+}
 
 @media (max-width: 520px){
   /* small phones: 1 per row */
@@ -2340,6 +2341,7 @@ html, body { overflow-x: hidden; }
   .hcard-body{
     padding: 16px !important;
   }
+}
 }
 
 /* ===== Styles page reviews: responsive grid ===== */
