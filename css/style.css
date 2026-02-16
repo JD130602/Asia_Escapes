@@ -1975,25 +1975,14 @@ body {
 }
 
 
+/* Responsiveness for smaller devices*/
 
-
-
-
-
-
-
-
-/* =========================================================
-   MOBILE + TABLET RESPONSIVE LAYER
-   (Auto-added)
-========================================================= */
-
-/* Better defaults on small screens */
+/* Better features on small screens */
 img { max-width: 100%; height: auto; }
 html { scroll-behavior: smooth; }
 :target { scroll-margin-top: 110px; }
 
-/* --- Header: mobile burger + drawer --- */
+/* Header: mobile burger + drawer */
 .nav-toggle{ display:none; }
 
 .nav-burger{
@@ -2238,10 +2227,7 @@ html, body { overflow-x: hidden; }
     grid-auto-rows: 120px;
   }
 }
-/* =========================================================
-   DESTINATIONS PAGE MOBILE FIXES
-   (Fixes all destinations sections)
-========================================================= */
+/* DESTINATIONS PAGE PHONE FIXES */
 
 @media (max-width: 900px){
 
@@ -2291,12 +2277,7 @@ html, body { overflow-x: hidden; }
     font-size: 20px;
   }
 }
-/* =========================================
-   Floating pill improvements (mobile)
-   - arrow inline
-   - smaller size
-   - cleaner proportions
-========================================= */
+/* Floating pill mobile adjustments*/
 
 @media (max-width: 900px){
 
@@ -2336,7 +2317,7 @@ html, body { overflow-x: hidden; }
     padding: 0 12px;
   }
   
-  /* ===== Styles page: Wildlife itinerary cards padding on mobile ===== */
+  /* STYLE PAGE PHONE FIXES */
 @media (max-width: 900px){
   .hcard-body{
     padding: 16px !important;
@@ -2344,7 +2325,7 @@ html, body { overflow-x: hidden; }
 }
 }
 
-/* ===== Styles page reviews: responsive grid ===== */
+/* Styles page reviews */
 @media (max-width: 900px){
   .styles-review-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -2357,7 +2338,7 @@ html, body { overflow-x: hidden; }
   }
 }
 
-/* ===== Styles page beach grid: responsive ===== */
+/* Styles page beach grid */
 @media (max-width: 900px){
   .beach-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -2372,11 +2353,7 @@ html, body { overflow-x: hidden; }
   .beach-card img{
     height: 190px; /* looks nicer when cards are full width */
   }
-/* =========================================
-   ABOUT PAGE mobile fixes (exact selectors)
-   - ASIA Escapes section (.about-split)
-   - Our Process section (.process-grid)
-========================================= */
+/* ABOUT PAGE PHONE FIXES*/
 
 @media (max-width: 900px){
 
