@@ -2007,15 +2007,15 @@ html { scroll-behavior: smooth; }
 }
 
 .mobile-nav{
-  display:none; /* desktop hidden */
+  display:none; 
 }
 
-/* scrim sits behind the drawer */
+
 .nav-scrim{
   display:none;
 }
 
-/* --- Tablet and down --- */
+
 @media (max-width: 900px){
 
   .site-header{
@@ -2134,12 +2134,12 @@ html { scroll-behavior: smooth; }
     background: rgba(230,219,193,0.7);
   }
 
-  /* Type scaling */
+  
   .hero-overlay h1{ font-size: clamp(28px, 7vw, 46px); }
   .hero-overlay p{ font-size: 16px; }
   .section-header h2{ font-size: clamp(28px, 5.5vw, 40px); }
 
-  /* Stack layouts */
+  
   .styles-content{ flex-direction: column; align-items: stretch; gap: 22px; }
   .styles-cards{ flex-wrap: wrap; justify-content: center; }
 
@@ -2172,7 +2172,7 @@ html { scroll-behavior: smooth; }
   }
   .footer-logo img{ height: 120px; }
 
-  /* Reduce huge section padding on mobile */
+ 
   .destinations, .styles, .reviews, .founder, .footer{
     padding-left: var(--page-pad);
     padding-right: var(--page-pad);
@@ -2185,20 +2185,20 @@ html { scroll-behavior: smooth; }
   .footer{ padding-top: 60px; }
 }
 
-/* --- Small phones --- */
+
 @media (max-width: 520px){
   .destination-card{ min-width: 0; }
   .style-card{ width: 100%; max-width: 320px; }
   .floating-actions{ bottom: 16px; }
 }
-/* ===== Fix Founder collage + missing text on mobile ===== */
 
-/* Stop any accidental sideways scrolling on mobile */
+
+
 html, body { overflow-x: hidden; }
 
 @media (max-width: 900px){
 
-  /* Founder section: stack text above collage */
+ 
   .founder-content{
     flex-direction: column;
     gap: 28px;
@@ -2210,7 +2210,7 @@ html, body { overflow-x: hidden; }
     max-width: 560px;
   }
 
-  /* Make collage fluid so it fits the screen */
+  
   .photo-collage{
     width: 100%;
     max-width: 420px;
@@ -2241,7 +2241,7 @@ html, body { overflow-x: hidden; }
     grid-template-columns: 1fr !important;
   }
 
-  /* If the map/image sits in a right column, force it full width */
+  
   .why-map,
   .dest-map,
   .map-wrap,
@@ -2253,10 +2253,10 @@ html, body { overflow-x: hidden; }
     display: block;
   }
 
- /* ===== Destinations reviews: make cards mobile-friendly ===== */
+ 
 
 @media (max-width: 900px){
-  /* tablet/phone: 2 per row */
+  
   .test-grid{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2264,7 +2264,7 @@ html, body { overflow-x: hidden; }
 }
 
 @media (max-width: 520px){
-  /* small phones: 1 per row */
+  
   .test-grid{
     grid-template-columns: 1fr;
   }
@@ -2277,27 +2277,27 @@ html, body { overflow-x: hidden; }
     font-size: 20px;
   }
 }
-/* Floating pill mobile adjustments*/
+
 
 @media (max-width: 900px){
 
   .floating-actions{
-    height: 52px;                /* smaller overall */
+    height: 52px;                
     width: min(320px, 92%);
     border-radius: 999px;
   }
 
   .floating-actions .action-btn{
-    display: flex;               /* KEY FIX */
-    align-items: center;         /* vertical center */
+    display: flex;               
+    align-items: center;         
     justify-content: center;
-    gap: 6px;                    /* space between text + arrow */
+    gap: 6px;                    
     padding: 0 16px;
     font-size: 15px;
-    white-space: nowrap;         /* prevent wrapping */
+    white-space: nowrap;        
   }
 
-  /* arrow next to text */
+  
   .floating-actions .action-btn span,
   .floating-actions .action-btn .arrow{
     display: inline-block;
@@ -2308,7 +2308,7 @@ html, body { overflow-x: hidden; }
 @media (max-width: 520px){
 
   .floating-actions{
-    height: 48px;                /* even smaller on tiny phones */
+    height: 48px;                
     width: 95%;
   }
 
@@ -2317,7 +2317,7 @@ html, body { overflow-x: hidden; }
     padding: 0 12px;
   }
   
-  /* STYLE PAGE PHONE FIXES */
+  
 @media (max-width: 900px){
   .hcard-body{
     padding: 16px !important;
@@ -2325,7 +2325,7 @@ html, body { overflow-x: hidden; }
 }
 }
 
-/* Styles page reviews */
+
 @media (max-width: 900px){
   .styles-review-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -2338,7 +2338,7 @@ html, body { overflow-x: hidden; }
   }
 }
 
-/* Styles page beach grid */
+
 @media (max-width: 900px){
   .beach-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -2351,20 +2351,20 @@ html, body { overflow-x: hidden; }
   }
 
   .beach-card img{
-    height: 190px; /* looks nicer when cards are full width */
+    height: 190px; 
   }
-/* ABOUT PAGE PHONE FIXES*/
+
 
 @media (max-width: 900px){
 
-  /* ASIA Escapes: stack text above image */
+  
   .about-section .about-split{
     grid-template-columns: 1fr !important;
     gap: 22px !important;
     align-items: start !important;
   }
 
-  /* Make the image behave nicely on small screens */
+  
   .about-section .about-media{
     width: 100%;
     display: flex;
@@ -2381,14 +2381,14 @@ html, body { overflow-x: hidden; }
     display: block;
   }
 
-  /* Badges: keep them centered and wrap */
+  
   .about-badges{
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
   }
 
-  /* Our Process: 2 columns on tablet/phone */
+  
   .process-grid{
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 16px !important;
@@ -2397,7 +2397,7 @@ html, body { overflow-x: hidden; }
 
 @media (max-width: 520px){
 
-  /* Our Process: 1 column on small phones */
+  
   .process-grid{
     grid-template-columns: 1fr !important;
   }
